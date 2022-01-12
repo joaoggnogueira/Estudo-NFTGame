@@ -1,0 +1,55 @@
+.custom-shadow-box {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.25s ease-out;
+}
+
+.custom-card {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.selected-overlay::after {
+  content: "";
+  background: rgb(9, 9, 121);
+  background: -moz-radial-gradient(circle, rgba(9, 9, 121, 0) 0%, rgba(97, 218, 251, 0.13629201680672265) 46%, rgba(0, 212, 255, 0.22592787114845936) 100%);
+  background: -webkit-radial-gradient(circle, rgba(9, 9, 121, 0) 0%, rgba(97, 218, 251, 0.13629201680672265) 46%, rgba(0, 212, 255, 0.22592787114845936) 100%);
+  background: radial-gradient(circle, rgba(9, 9, 121, 0) 0%, rgba(97, 218, 251, 0.13629201680672265) 46%, rgba(0, 212, 255, 0.22592787114845936) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979", endColorstr="#00d4ff", GradientType=1);
+  width: 125px;
+  height: 125px;
+  border: 2px solid rgb(97, 218, 251);
+  position: absolute;
+  transform: translateX(-100%);
+  border-radius: 50%;
+}
+
+.custom-shadow-box:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.custom-grid-cards {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 24px;
+  column-gap: 24px;
+  justify-content: center;
+}
+
+.custom-card-2{
+  border-radius: 24px;
+  cursor: pointer;
+  margin: 12px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.d-flex{
+  display: flex;
+}
